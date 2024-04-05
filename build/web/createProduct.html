@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>New Product</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+        table{
+            text-align: right;
+            margin-right: 30px;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+            body{
+                background-color: lightviolet;
+            }
+    </style>
+    </head>
+    <body>
+        Create product
+        <div class="cP">
+            <form action="MainController" method="POST">
+                Product ID<input type="text" name="ProductID" required=""/>
+                </br>Name<input type="text" name="Name" required=""/>
+                </br>price<input type="text" name="price" readonly=""/>
+                </br>quantity<input type="text" name="quantity" readonly=""/>
+                </br><input type="submit" name="action" value="Create"/>
+                <input type="reset" value="Reset"/>
+            </form>
+        </div>
+
+
+    </body>
+</html>
